@@ -18,6 +18,9 @@ export default function DreamCard({ dream }: { dream: DreamEntry }) {
         )}
       </div>
       <h3 className="font-display font-semibold text-lg text-blush-900 mb-2 leading-snug">
+        <span className="mr-1.5" aria-hidden>
+          {dream.icon}
+        </span>
         {dream.title}
       </h3>
       <p className="text-sm text-blush-900/65 leading-relaxed line-clamp-3">

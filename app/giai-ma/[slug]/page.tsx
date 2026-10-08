@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import DreamCard from "@/components/DreamCard";
 import OmenBadge from "@/components/OmenBadge";
+import ShareButtons from "@/components/ShareButtons";
 import {
   DREAMS,
   OMEN_LABEL,
@@ -38,10 +39,26 @@ export default function DreamDetailPage({
 
   const cat = getCategory(dream.category);
   const related = relatedDreams(dream, 6);
-  const omenInfo = OMEN_LABEL[dream.omen];
+
+  // Dữ liệu có cấu trúc JSON-LD giúp Google hiểu và hiển thị đẹp hơn
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: `${dream.title} là điềm gì?`,
+    description: dream.summary,
+    inLanguage: "vi-VN",
+    author: {
+      "@type": "Organization",
+      name: "Giải Mã Giấc Mơ",
+    },
+  };
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Breadcrumb */}
       <nav className="text-xs text-blush-900/50 mb-6">
         <Link href="/" className="hover:text-blush-600">
@@ -56,10 +73,22 @@ export default function DreamDetailPage({
       </nav>
 
       {/* Tiêu đề */}
-      <div className="bg-white rounded-[2rem] border border-blush-200 shadow-soft p-8 md:p-10 mb-6 relative overflow-hidden">
+      <div className="bg-white rounded-[2rem] border border-blush-200 shadow-soft p-8 md:p-10 mb-5 relative overflow-hidden">
         <div className="absolute inset-0 dot-pattern opacity-50 pointer-events-none" />
+        <div
+          className="absolute -top-4 right-2 md:right-4 text-[72px] md:text-[110px] opacity-[0.13] rotate-12 select-none pointer-events-none"
+          aria-hidden
+        >
+          {dream.icon}
+        </div>
         <div className="relative">
           <div className="flex items-center gap-3 flex-wrap mb-4">
+            <span
+              className="w-14 h-14 rounded-2xl bg-blush-100 flex items-center justify-center text-4xl shadow-card shrink-0"
+              aria-hidden
+            >
+              {dream.icon}
+            </span>
             <OmenBadge omen={dream.omen} size="md" />
             {cat && (
               <Link
@@ -77,6 +106,11 @@ export default function DreamDetailPage({
             {dream.summary}
           </p>
         </div>
+      </div>
+
+      {/* Chia sẻ */}
+      <div className="mb-6">
+        <ShareButtons title={`${dream.title} là điềm gì? | Giải Mã Giấc Mơ`} />
       </div>
 
       {/* Ý nghĩa chi tiết */}

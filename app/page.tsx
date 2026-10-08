@@ -64,6 +64,29 @@ export default function HomePage() {
           </p>
           <SearchBar big />
 
+          {/* Gợi ý từ khóa phổ biến */}
+          <div className="mt-5 flex items-center justify-center gap-2 flex-wrap">
+            <span className="text-xs text-blush-900/50">Thử ngay:</span>
+            {[
+              { label: "🐍 rắn", q: "rắn" },
+              { label: "🦸 bay", q: "bay" },
+              { label: "💒 đám cưới", q: "đám cưới" },
+              { label: "💵 tiền", q: "tiền" },
+              { label: "🐉 rồng", q: "rồng" },
+              { label: "🌧️ mưa", q: "mưa" },
+              { label: "👶 em bé", q: "em bé" },
+              { label: "🦷 rụng răng", q: "rụng răng" },
+            ].map((s) => (
+              <Link
+                key={s.q}
+                href={`/tra-cuu?q=${encodeURIComponent(s.q)}`}
+                className="px-3.5 py-1.5 rounded-full text-xs font-medium bg-white border border-blush-200 text-blush-700 hover:border-blush-400 hover:bg-blush-50 transition shadow-card"
+              >
+                {s.label}
+              </Link>
+            ))}
+          </div>
+
           <div className="mt-10 flex items-center justify-center gap-6 md:gap-10 text-center">
             <div>
               <div className="font-display text-3xl font-bold text-blush-600">
