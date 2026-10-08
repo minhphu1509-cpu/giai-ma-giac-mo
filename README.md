@@ -12,7 +12,7 @@ số may mắn theo sổ mơ dân gian.
 - 🔍 **Tra cứu giấc mơ** — tìm kiếm có dấu/không dấu, lọc theo 5 danh mục
   (Động vật, Thiên nhiên, Con người, Sự kiện & Hành động, Đồ vật) và loại
   điềm báo
-- 📜 **117 giấc mơ** với ý nghĩa chi tiết, điềm báo và lời khuyên theo quan
+- 📜 **115 giấc mơ** với ý nghĩa chi tiết, điềm báo và lời khuyên theo quan
   niệm dân gian Việt Nam
 - 🔢 **Sổ mơ số may mắn** — tra cứu ngược từ con số (00–99) ra giấc mơ, bảng
   sổ mơ đầy đủ
@@ -39,7 +39,7 @@ giai-ma-giac-mo/
 │   └── globals.css           # Style toàn cục + bảng màu hồng phấn
 ├── components/               # Header, Footer, DreamCard, SearchBar...
 ├── lib/
-│   └── dreams.ts             # 📚 DỮ LIỆU: 117 giấc mơ + hàm tìm kiếm/lọc
+│   └── dreams.ts             # 📚 DỮ LIỆU: 115 giấc mơ + hàm tìm kiếm/lọc
 ├── public/                   # Tài nguyên tĩnh
 ├── package.json
 └── README.md
