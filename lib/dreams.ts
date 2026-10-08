@@ -8,6 +8,7 @@ export type Omen = "tot" | "xau" | "trung-tinh";
 
 export interface DreamEntry {
   slug: string;
+  icon: string;
   title: string;
   keywords: string[];
   category: string; // category id
@@ -73,6 +74,7 @@ export const DREAMS: DreamEntry[] = [
   // ---------------- ĐỘNG VẬT ----------------
   {
     slug: "mo-thay-ran",
+    icon: "🐍",
     title: "Mơ thấy rắn",
     keywords: ["rắn", "ran", "rắn cắn", "rắn hổ mang", "rắn bò vào nhà"],
     category: "dong-vat",
@@ -86,6 +88,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-ran-can",
+    icon: "🐍",
     title: "Mơ bị rắn cắn",
     keywords: ["rắn cắn", "ran can", "bị cắn", "rắn độc cắn"],
     category: "dong-vat",
@@ -99,6 +102,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-rong",
+    icon: "🐉",
     title: "Mơ thấy rồng",
     keywords: ["rồng", "rong", "rồng bay", "rồng vàng", "long"],
     category: "dong-vat",
@@ -112,6 +116,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-ho",
+    icon: "🐯",
     title: "Mơ thấy hổ",
     keywords: ["hổ", "ho", "cọp", "ông hổ", "hổ vồ"],
     category: "dong-vat",
@@ -125,6 +130,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-meo",
+    icon: "🐱",
     title: "Mơ thấy mèo",
     keywords: ["mèo", "meo", "mèo đen", "mèo trắng", "mèo con"],
     category: "dong-vat",
@@ -138,6 +144,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-cho",
+    icon: "🐶",
     title: "Mơ thấy chó",
     keywords: ["chó", "cho", "chó cắn", "chó sủa", "cún", "chó con"],
     category: "dong-vat",
@@ -151,6 +158,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-chim",
+    icon: "🐦",
     title: "Mơ thấy chim bay",
     keywords: ["chim", "chim bay", "chim đậu", "chim én", "đàn chim"],
     category: "dong-vat",
@@ -164,6 +172,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-qua",
+    icon: "🐦‍⬛",
     title: "Mơ thấy quạ",
     keywords: ["quạ", "qua", "quạ kêu", "quạ đen"],
     category: "dong-vat",
@@ -177,6 +186,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-ca",
+    icon: "🐟",
     title: "Mơ thấy cá",
     keywords: ["cá", "ca", "cá chép", "bắt cá", "cá vàng", "đàn cá"],
     category: "dong-vat",
@@ -190,6 +200,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-ech",
+    icon: "🐸",
     title: "Mơ thấy ếch",
     keywords: ["ếch", "ech", "nhái", "cóc", "ếch kêu"],
     category: "dong-vat",
@@ -203,6 +214,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-chuot",
+    icon: "🐭",
     title: "Mơ thấy chuột",
     keywords: ["chuột", "chuot", "chuột cắn", "đuổi chuột", "ổ chuột"],
     category: "dong-vat",
@@ -216,6 +228,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-ong",
+    icon: "🐝",
     title: "Mơ thấy ong",
     keywords: ["ong", "ong mật", "ong đốt", "tổ ong", "ong vò vẽ"],
     category: "dong-vat",
@@ -229,6 +242,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-buom",
+    icon: "🦋",
     title: "Mơ thấy bướm",
     keywords: ["bướm", "buom", "bướm bay", "bướm đậu", "hồ điệp"],
     category: "dong-vat",
@@ -242,6 +256,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-trau",
+    icon: "🐃",
     title: "Mơ thấy trâu",
     keywords: ["trâu", "trau", "trâu cày", "nghé", "bò"],
     category: "dong-vat",
@@ -255,6 +270,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-ngua",
+    icon: "🐴",
     title: "Mơ thấy ngựa",
     keywords: ["ngựa", "ngua", "cưỡi ngựa", "ngựa phi", "mã"],
     category: "dong-vat",
@@ -268,6 +284,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-heo",
+    icon: "🐷",
     title: "Mơ thấy heo",
     keywords: ["heo", "lợn", "lon", "heo con", "heo ỉn", "đàn heo"],
     category: "dong-vat",
@@ -281,6 +298,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-ga",
+    icon: "🐔",
     title: "Mơ thấy gà",
     keywords: ["gà", "ga", "gà gáy", "gà mái", "gà con", "gà trống"],
     category: "dong-vat",
@@ -294,6 +312,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-khi",
+    icon: "🐵",
     title: "Mơ thấy khỉ",
     keywords: ["khỉ", "khi", "vượn", "tôn ngộ không", "khỉ leo cây"],
     category: "dong-vat",
@@ -307,6 +326,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-voi",
+    icon: "🐘",
     title: "Mơ thấy voi",
     keywords: ["voi", "voi trắng", "cưỡi voi", "ngà voi"],
     category: "dong-vat",
@@ -320,6 +340,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-rua",
+    icon: "🐢",
     title: "Mơ thấy rùa",
     keywords: ["rùa", "rua", "rùa vàng", "rùa bò", "cụ rùa"],
     category: "dong-vat",
@@ -333,6 +354,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-ca-sau",
+    icon: "🐊",
     title: "Mơ thấy cá sấu",
     keywords: ["cá sấu", "ca sau", "sấu", "bị cá sấu cắn"],
     category: "dong-vat",
@@ -346,6 +368,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-tho",
+    icon: "🐰",
     title: "Mơ thấy thỏ",
     keywords: ["thỏ", "tho", "thỏ trắng", "thỏ con", "thỏ ngọc"],
     category: "dong-vat",
@@ -359,6 +382,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-de",
+    icon: "🐐",
     title: "Mơ thấy dê",
     keywords: ["dê", "de", "dê con", "cừu", "đàn dê"],
     category: "dong-vat",
@@ -372,6 +396,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-nhen",
+    icon: "🕷️",
     title: "Mơ thấy nhện",
     keywords: ["nhện", "nhen", "mạng nhện", "nhện giăng tơ"],
     category: "dong-vat",
@@ -385,6 +410,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-cu-meo",
+    icon: "🦉",
     title: "Mơ thấy cú mèo",
     keywords: ["cú mèo", "cu meo", "chim cú", "cú kêu"],
     category: "dong-vat",
@@ -398,6 +424,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-doi",
+    icon: "🦇",
     title: "Mơ thấy dơi",
     keywords: ["dơi", "doi", "dơi bay", "đàn dơi"],
     category: "dong-vat",
@@ -411,6 +438,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-kien",
+    icon: "🐜",
     title: "Mơ thấy kiến",
     keywords: ["kiến", "kien", "đàn kiến", "kiến bò", "kiến cắn"],
     category: "dong-vat",
@@ -424,6 +452,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-luon",
+    icon: "🐟",
     title: "Mơ thấy lươn",
     keywords: ["lươn", "luon", "bắt lươn", "lươn bò"],
     category: "dong-vat",
@@ -438,6 +467,7 @@ export const DREAMS: DreamEntry[] = [
   // ---------------- THIÊN NHIÊN ----------------
   {
     slug: "mo-thay-mua",
+    icon: "🌧️",
     title: "Mơ thấy mưa",
     keywords: ["mưa", "mua", "trời mưa", "mưa to", "mưa nhỏ", "dầm mưa"],
     category: "thien-nhien",
@@ -451,6 +481,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-bao",
+    icon: "🌪️",
     title: "Mơ thấy bão",
     keywords: ["bão", "bao", "bão tố", "giông bão", "lốc xoáy"],
     category: "thien-nhien",
@@ -464,6 +495,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-sam-set",
+    icon: "⛈️",
     title: "Mơ thấy sấm sét",
     keywords: ["sấm", "sét", "sam set", "sấm chớp", "sét đánh", "tia chớp"],
     category: "thien-nhien",
@@ -477,6 +509,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-lu-lut",
+    icon: "🌊",
     title: "Mơ thấy lũ lụt",
     keywords: ["lũ lụt", "lu lut", "ngập lụt", "nước lũ", "vỡ đê"],
     category: "thien-nhien",
@@ -490,6 +523,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-nuoc-trong",
+    icon: "💧",
     title: "Mơ thấy nước trong",
     keywords: ["nước trong", "nuoc trong", "nước suối", "nước giếng trong", "uống nước trong"],
     category: "thien-nhien",
@@ -503,6 +537,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-nuoc-duc",
+    icon: "🚱",
     title: "Mơ thấy nước đục",
     keywords: ["nước đục", "nuoc duc", "nước bẩn", "nước đen", "bùn"],
     category: "thien-nhien",
@@ -516,6 +551,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-bien",
+    icon: "🌊",
     title: "Mơ thấy biển",
     keywords: ["biển", "bien", "đại dương", "sóng biển", "bãi biển", "biển xanh"],
     category: "thien-nhien",
@@ -529,6 +565,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-song",
+    icon: "🏞️",
     title: "Mơ thấy sông",
     keywords: ["sông", "song", "dòng sông", "qua sông", "bến sông", "sông nước"],
     category: "thien-nhien",
@@ -542,6 +579,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-nui",
+    icon: "⛰️",
     title: "Mơ thấy núi",
     keywords: ["núi", "nui", "leo núi", "đỉnh núi", "núi cao", "dãy núi"],
     category: "thien-nhien",
@@ -555,6 +593,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-lua",
+    icon: "🔥",
     title: "Mơ thấy lửa",
     keywords: ["lửa", "lua", "cháy", "đám cháy", "lửa cháy", "cháy nhà", "lửa đỏ"],
     category: "thien-nhien",
@@ -568,6 +607,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-mat-troi",
+    icon: "☀️",
     title: "Mơ thấy mặt trời",
     keywords: ["mặt trời", "mat troi", "bình minh", "nắng", "nhật"],
     category: "thien-nhien",
@@ -581,6 +621,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-mat-trang",
+    icon: "🌕",
     title: "Mơ thấy mặt trăng",
     keywords: ["mặt trăng", "mat trang", "trăng rằm", "trăng sáng", "nguyệt"],
     category: "thien-nhien",
@@ -594,6 +635,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-sao",
+    icon: "⭐",
     title: "Mơ thấy sao",
     keywords: ["sao", "ngôi sao", "sao băng", "bầu trời sao", "sao sáng"],
     category: "thien-nhien",
@@ -607,6 +649,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-cau-vong",
+    icon: "🌈",
     title: "Mơ thấy cầu vồng",
     keywords: ["cầu vồng", "cau vong", "mống", "bảy sắc cầu vồng"],
     category: "thien-nhien",
@@ -620,6 +663,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-hoa-hong",
+    icon: "🌹",
     title: "Mơ thấy hoa hồng",
     keywords: ["hoa hồng", "hoa hong", "hồng đỏ", "hồng nhung", "tặng hoa hồng"],
     category: "thien-nhien",
@@ -633,6 +677,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-hoa-sen",
+    icon: "🪷",
     title: "Mơ thấy hoa sen",
     keywords: ["hoa sen", "hoa sen trắng", "sen hồng", "đầm sen", "bông sen"],
     category: "thien-nhien",
@@ -646,6 +691,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-hoa-dao",
+    icon: "🌸",
     title: "Mơ thấy hoa đào",
     keywords: ["hoa đào", "hoa dao", "đào nở", "cành đào", "đào tết"],
     category: "thien-nhien",
@@ -659,6 +705,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-cay-xanh",
+    icon: "🌳",
     title: "Mơ thấy cây xanh",
     keywords: ["cây xanh", "cay xanh", "cây cổ thụ", "rừng cây", "cây đâm chồi"],
     category: "thien-nhien",
@@ -672,6 +719,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-trai-cay",
+    icon: "🍎",
     title: "Mơ thấy trái cây chín",
     keywords: ["trái cây", "trai cay", "quả chín", "hái quả", "táo", "cam", "nho"],
     category: "thien-nhien",
@@ -685,6 +733,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-la-rung",
+    icon: "🍂",
     title: "Mơ thấy lá rụng",
     keywords: ["lá rụng", "la rung", "lá vàng", "lá khô", "mùa thu lá rụng"],
     category: "thien-nhien",
@@ -698,6 +747,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-dong-dat",
+    icon: "🏚️",
     title: "Mơ thấy động đất",
     keywords: ["động đất", "dong dat", "rung chuyển", "đất nứt", "nhà rung"],
     category: "thien-nhien",
@@ -711,6 +761,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-suong-mu",
+    icon: "🌫️",
     title: "Mơ thấy sương mù",
     keywords: ["sương mù", "suong mu", "mù mịt", "sương giăng", "không nhìn rõ"],
     category: "thien-nhien",
@@ -724,6 +775,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-gieng-nuoc",
+    icon: "🪣",
     title: "Mơ thấy giếng nước",
     keywords: ["giếng", "gieng", "giếng nước", "múc nước giếng", "giếng khơi"],
     category: "thien-nhien",
@@ -737,6 +789,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-tuyet",
+    icon: "❄️",
     title: "Mơ thấy tuyết",
     keywords: ["tuyết", "tuyet", "tuyết rơi", "băng tuyết", "trời tuyết"],
     category: "thien-nhien",
@@ -751,6 +804,7 @@ export const DREAMS: DreamEntry[] = [
   // ---------------- CON NGƯỜI ----------------
   {
     slug: "mo-thay-em-be",
+    icon: "👶",
     title: "Mơ thấy em bé",
     keywords: ["em bé", "em be", "trẻ sơ sinh", "bé con", "bồng em bé", "trẻ con"],
     category: "con-nguoi",
@@ -764,6 +818,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-dam-cuoi",
+    icon: "💒",
     title: "Mơ thấy đám cưới",
     keywords: ["đám cưới", "dam cuoi", "cưới hỏi", "lễ cưới", "cô dâu", "chú rể", "đi ăn cưới"],
     category: "con-nguoi",
@@ -777,6 +832,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-dam-tang",
+    icon: "🕯️",
     title: "Mơ thấy đám tang",
     keywords: ["đám tang", "dam tang", "đám ma", "tang lễ", "đi viếng", "khóc tang"],
     category: "con-nguoi",
@@ -790,6 +846,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-nguoi-da-khuat",
+    icon: "🙏",
     title: "Mơ thấy người thân đã khuất",
     keywords: ["người chết", "người đã mất", "ông bà", "tổ tiên", "bố mẹ đã mất", "người khuất"],
     category: "con-nguoi",
@@ -803,6 +860,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-me",
+    icon: "🤱",
     title: "Mơ thấy mẹ",
     keywords: ["mẹ", "me", "mẹ hiền", "mẹ ôm", "mẹ cười", "mẹ nấu cơm"],
     category: "con-nguoi",
@@ -816,6 +874,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-cha",
+    icon: "👨",
     title: "Mơ thấy cha",
     keywords: ["cha", "bố", "ba", "phụ thân", "cha dạy bảo"],
     category: "con-nguoi",
@@ -829,6 +888,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-ban-be",
+    icon: "🧑‍🤝‍🧑",
     title: "Mơ thấy bạn bè",
     keywords: ["bạn bè", "ban be", "bạn thân", "bạn cũ", "họp lớp", "bạn học"],
     category: "con-nguoi",
@@ -842,6 +902,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-sinh-con",
+    icon: "🍼",
     title: "Mơ thấy sinh con",
     keywords: ["sinh con", "sinh be", "đẻ con", "vượt cạn", "sinh đôi"],
     category: "con-nguoi",
@@ -855,6 +916,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-mang-thai",
+    icon: "🤰",
     title: "Mơ thấy mang thai",
     keywords: ["mang thai", "có bầu", "có thai", "bầu bí", "thai nghén"],
     category: "con-nguoi",
@@ -868,6 +930,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-hon",
+    icon: "💋",
     title: "Mơ thấy hôn",
     keywords: ["hôn", "hon", "hôn nhau", "nụ hôn", "hôn người yêu"],
     category: "con-nguoi",
@@ -881,6 +944,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-danh-nhau",
+    icon: "🥊",
     title: "Mơ thấy đánh nhau",
     keywords: ["đánh nhau", "danh nhau", "ẩu đả", "đánh lộn", "cãi nhau đánh nhau"],
     category: "con-nguoi",
@@ -894,6 +958,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-khoc",
+    icon: "😭",
     title: "Mơ thấy khóc",
     keywords: ["khóc", "khoc", "khóc nức nở", "rơi nước mắt", "khóc trong mơ"],
     category: "con-nguoi",
@@ -907,6 +972,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-cuoi",
+    icon: "😄",
     title: "Mơ thấy cười",
     keywords: ["cười", "cuoi", "cười lớn", "cười vui", "cười ha hả"],
     category: "con-nguoi",
@@ -920,6 +986,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-rung-rang",
+    icon: "🦷",
     title: "Mơ thấy rụng răng",
     keywords: ["rụng răng", "rung rang", "răng rụng", "gãy răng", "răng lung lay", "nhổ răng"],
     category: "con-nguoi",
@@ -933,6 +1000,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-chay-mau",
+    icon: "🩸",
     title: "Mơ thấy chảy máu",
     keywords: ["chảy máu", "chay mau", "máu", "đổ máu", "máu me", "vết thương chảy máu"],
     category: "con-nguoi",
@@ -946,6 +1014,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-cat-toc",
+    icon: "💇",
     title: "Mơ thấy cắt tóc",
     keywords: ["cắt tóc", "cat toc", "hớt tóc", "tóc ngắn", "đi cắt tóc"],
     category: "con-nguoi",
@@ -959,6 +1028,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-toc-bac",
+    icon: "🧓",
     title: "Mơ thấy tóc bạc",
     keywords: ["tóc bạc", "toc bac", "bạc đầu", "tóc trắng", "già đi"],
     category: "con-nguoi",
@@ -972,6 +1042,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-bi-ruot-duoi",
+    icon: "🏃",
     title: "Mơ bị rượt đuổi",
     keywords: ["rượt đuổi", "ruot duoi", "bị đuổi", "chạy trốn", "trốn chạy", "bị truy đuổi"],
     category: "con-nguoi",
@@ -985,6 +1056,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-nguoi-yeu-cu",
+    icon: "💔",
     title: "Mơ thấy người yêu cũ",
     keywords: ["người yêu cũ", "nguoi yeu cu", "tình cũ", "ex", "bạn trai cũ", "bạn gái cũ"],
     category: "con-nguoi",
@@ -998,6 +1070,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-thay-co",
+    icon: "👩‍🏫",
     title: "Mơ thấy thầy cô",
     keywords: ["thầy cô", "thay co", "thầy giáo", "cô giáo", "đi học", "trường học"],
     category: "con-nguoi",
@@ -1011,6 +1084,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-bac-si",
+    icon: "👨‍⚕️",
     title: "Mơ thấy bác sĩ",
     keywords: ["bác sĩ", "bac si", "khám bệnh", "bệnh viện", "y tá", "thuốc"],
     category: "con-nguoi",
@@ -1024,6 +1098,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-trom-cap",
+    icon: "🥷",
     title: "Mơ thấy trộm cắp",
     keywords: ["trộm", "trom", "ăn trộm", "trộm cắp", "bị trộm", "mất trộm"],
     category: "con-nguoi",
@@ -1037,6 +1112,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-nguoi-la",
+    icon: "👤",
     title: "Mơ thấy người lạ",
     keywords: ["người lạ", "nguoi la", "người không quen", "khách lạ", "người dưng"],
     category: "con-nguoi",
@@ -1051,6 +1127,7 @@ export const DREAMS: DreamEntry[] = [
   // ---------------- SỰ KIỆN & HÀNH ĐỘNG ----------------
   {
     slug: "mo-thay-bay",
+    icon: "🦸",
     title: "Mơ thấy mình biết bay",
     keywords: ["bay", "biết bay", "bay lượn", "bay trên trời", "tung cánh"],
     category: "su-kien",
@@ -1064,6 +1141,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-te-nga",
+    icon: "🤕",
     title: "Mơ thấy té ngã",
     keywords: ["té ngã", "te nga", "rơi", "rơi xuống", "ngã", "rơi từ trên cao", "sảy chân"],
     category: "su-kien",
@@ -1077,6 +1155,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-chay",
+    icon: "🏃",
     title: "Mơ thấy chạy",
     keywords: ["chạy", "chay bo", "chạy bộ", "chạy nhanh", "chạy marathon"],
     category: "su-kien",
@@ -1090,6 +1169,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-boi",
+    icon: "🏊",
     title: "Mơ thấy bơi",
     keywords: ["bơi", "boi loi", "bơi lội", "tắm sông", "bơi biển"],
     category: "su-kien",
@@ -1103,6 +1183,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-lai-xe",
+    icon: "🚗",
     title: "Mơ thấy lái xe",
     keywords: ["lái xe", "lai xe", "cầm lái", "xe hơi", "đi xe", "lái ô tô"],
     category: "su-kien",
@@ -1116,6 +1197,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-tai-nan",
+    icon: "🚨",
     title: "Mơ thấy tai nạn",
     keywords: ["tai nạn", "tai nan", "tai nạn xe", "đâm xe", "tai nạn giao thông"],
     category: "su-kien",
@@ -1129,6 +1211,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-di-thi",
+    icon: "📝",
     title: "Mơ thấy đi thi",
     keywords: ["đi thi", "di thi", "thi cử", "thi trượt", "phòng thi", "làm bài thi"],
     category: "su-kien",
@@ -1142,6 +1225,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-trung-so",
+    icon: "🎰",
     title: "Mơ thấy trúng số",
     keywords: ["trúng số", "trung so", "trúng độc đắc", "vé số", "trúng thưởng", "xổ số"],
     category: "su-kien",
@@ -1155,6 +1239,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-nhat-duoc-tien",
+    icon: "💸",
     title: "Mơ thấy nhặt được tiền",
     keywords: ["nhặt tiền", "nhat tien", "nhặt được tiền", "tiền rơi", "lượm tiền"],
     category: "su-kien",
@@ -1168,6 +1253,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-mat-tien",
+    icon: "👛",
     title: "Mơ thấy mất tiền",
     keywords: ["mất tiền", "mat tien", "mất ví", "mất của", "rơi tiền"],
     category: "su-kien",
@@ -1181,6 +1267,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-lac-duong",
+    icon: "🧭",
     title: "Mơ thấy lạc đường",
     keywords: ["lạc đường", "lac duong", "lạc lối", "không tìm được đường", "đi lạc"],
     category: "su-kien",
@@ -1194,6 +1281,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-leo-nui",
+    icon: "🧗",
     title: "Mơ thấy leo núi",
     keywords: ["leo núi", "leo nui", "chinh phục", "trèo đèo", "lên đỉnh"],
     category: "su-kien",
@@ -1207,6 +1295,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-du-lich",
+    icon: "🧳",
     title: "Mơ thấy đi du lịch",
     keywords: ["du lịch", "du lich", "đi chơi xa", "phượt", "khám phá"],
     category: "su-kien",
@@ -1220,6 +1309,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-chuyen-nha",
+    icon: "📦",
     title: "Mơ thấy chuyển nhà",
     keywords: ["chuyển nhà", "chuyen nha", "dọn nhà", "nhà mới", "chuyển chỗ ở"],
     category: "su-kien",
@@ -1233,6 +1323,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-xay-nha",
+    icon: "🏗️",
     title: "Mơ thấy xây nhà",
     keywords: ["xây nhà", "xay nha", "làm nhà", "xây dựng", "cất nhà", "đổ móng"],
     category: "su-kien",
@@ -1246,6 +1337,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-nau-an",
+    icon: "🍳",
     title: "Mơ thấy nấu ăn",
     keywords: ["nấu ăn", "nau an", "nấu cơm", "vào bếp", "nấu nướng"],
     category: "su-kien",
@@ -1259,6 +1351,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-an-tiec",
+    icon: "🍽️",
     title: "Mơ thấy ăn tiệc",
     keywords: ["ăn tiệc", "an tiec", "cỗ bàn", "liên hoan", "ăn uống", "mâm cỗ"],
     category: "su-kien",
@@ -1272,6 +1365,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-di-cho",
+    icon: "🛒",
     title: "Mơ thấy đi chợ",
     keywords: ["đi chợ", "di cho", "chợ", "mua bán", "chợ đông"],
     category: "su-kien",
@@ -1285,6 +1379,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-hat",
+    icon: "🎤",
     title: "Mơ thấy hát",
     keywords: ["hát", "hat ca", "ca hát", "hát karaoke", "biểu diễn"],
     category: "su-kien",
@@ -1298,6 +1393,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-cau-ca",
+    icon: "🎣",
     title: "Mơ thấy câu cá",
     keywords: ["câu cá", "cau ca", "đi câu", "cần câu", "cá cắn câu"],
     category: "su-kien",
@@ -1311,6 +1407,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-trong-cay",
+    icon: "🌱",
     title: "Mơ thấy trồng cây",
     keywords: ["trồng cây", "trong cay", "gieo hạt", "trồng rau", "làm vườn"],
     category: "su-kien",
@@ -1324,6 +1421,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-nhay-mua",
+    icon: "💃",
     title: "Mơ thấy nhảy múa",
     keywords: ["nhảy múa", "nhay mua", "khiêu vũ", "múa", "nhảy"],
     category: "su-kien",
@@ -1338,6 +1436,7 @@ export const DREAMS: DreamEntry[] = [
   // ---------------- ĐỒ VẬT ----------------
   {
     slug: "mo-thay-tien",
+    icon: "💵",
     title: "Mơ thấy tiền",
     keywords: ["tiền", "tien bac", "tiền giấy", "tiền xu", "tiền đô", "tiền polymer"],
     category: "do-vat",
@@ -1351,6 +1450,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-vang",
+    icon: "🪙",
     title: "Mơ thấy vàng",
     keywords: ["vàng", "vang bac", "vàng miếng", "nhẫn vàng", "dây chuyền vàng", "vàng bạc"],
     category: "do-vat",
@@ -1364,6 +1464,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-nha-cua",
+    icon: "🏠",
     title: "Mơ thấy nhà cửa",
     keywords: ["nhà", "nha cua", "nhà mới", "nhà to", "biệt thự", "tổ ấm"],
     category: "do-vat",
@@ -1377,6 +1478,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-xe-hoi",
+    icon: "🚗",
     title: "Mơ thấy xe hơi",
     keywords: ["xe hơi", "xe hoi", "ô tô", "xe mới", "lái ô tô", "mua xe"],
     category: "do-vat",
@@ -1390,6 +1492,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-dien-thoai",
+    icon: "📱",
     title: "Mơ thấy điện thoại",
     keywords: ["điện thoại", "dien thoai", "smartphone", "gọi điện", "mất điện thoại", "điện thoại vỡ"],
     category: "do-vat",
@@ -1403,6 +1506,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-dong-ho",
+    icon: "⌚",
     title: "Mơ thấy đồng hồ",
     keywords: ["đồng hồ", "dong ho", "đồng hồ đeo tay", "kim đồng hồ", "đồng hồ chết"],
     category: "do-vat",
@@ -1416,6 +1520,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-guong",
+    icon: "🪞",
     title: "Mơ thấy gương",
     keywords: ["gương", "guong soi", "soi gương", "gương vỡ", "kính"],
     category: "do-vat",
@@ -1429,6 +1534,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-chia-khoa",
+    icon: "🔑",
     title: "Mơ thấy chìa khóa",
     keywords: ["chìa khóa", "chia khoa", "chìa khoá", "khóa", "mở khóa"],
     category: "do-vat",
@@ -1442,6 +1548,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-quan-ao-moi",
+    icon: "👗",
     title: "Mơ thấy quần áo mới",
     keywords: ["quần áo mới", "quan ao", "áo mới", "mua quần áo", "thay đồ", "áo dài"],
     category: "do-vat",
@@ -1455,6 +1562,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-giay",
+    icon: "👟",
     title: "Mơ thấy giày",
     keywords: ["giày", "giay dep", "giày mới", "đi giày", "mất giày", "dép"],
     category: "do-vat",
@@ -1468,6 +1576,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-nhan",
+    icon: "💍",
     title: "Mơ thấy nhẫn",
     keywords: ["nhẫn", "nhan cuoi", "nhẫn cưới", "đeo nhẫn", "nhẫn vàng", "cầu hôn"],
     category: "do-vat",
@@ -1481,6 +1590,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-sach",
+    icon: "📚",
     title: "Mơ thấy sách",
     keywords: ["sách", "sach vo", "đọc sách", "sách vở", "thư viện", "học bài"],
     category: "do-vat",
@@ -1494,6 +1604,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-dao-keo",
+    icon: "🔪",
     title: "Mơ thấy dao kéo",
     keywords: ["dao", "kéo", "dao keo", "dao sắc", "bị dao đâm", "cầm dao"],
     category: "do-vat",
@@ -1507,6 +1618,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-nen",
+    icon: "🕯️",
     title: "Mơ thấy nến",
     keywords: ["nến", "den cay", "đèn", "ánh nến", "thắp nến", "nến cháy"],
     category: "do-vat",
@@ -1520,6 +1632,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-cau-thang",
+    icon: "🪜",
     title: "Mơ thấy cầu thang",
     keywords: ["cầu thang", "cau thang", "leo cầu thang", "bậc thang", "thang máy"],
     category: "do-vat",
@@ -1533,6 +1646,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-thuyen",
+    icon: "⛵",
     title: "Mơ thấy thuyền",
     keywords: ["thuyền", "thuyen buom", "đò", "thuyền buồm", "chèo thuyền", "xuồng"],
     category: "do-vat",
@@ -1546,6 +1660,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-vali",
+    icon: "🧳",
     title: "Mơ thấy vali",
     keywords: ["vali", "hành lý", "va li", "xách vali", "đóng gói", "ba lô"],
     category: "do-vat",
@@ -1559,6 +1674,7 @@ export const DREAMS: DreamEntry[] = [
   },
   {
     slug: "mo-thay-cua",
+    icon: "🚪",
     title: "Mơ thấy cửa",
     keywords: ["cửa", "cua chinh", "cánh cửa", "mở cửa", "đóng cửa", "cửa sổ"],
     category: "do-vat",
