@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --blush-50: #fdf4f7;
+  --blush-100: #fce8f0;
+  --blush-500: #e15a97;
+  --blush-700: #a82e66;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fffbf8;
+  color: #4a2c3a;
+  font-family: var(--font-be-vn), system-ui, sans-serif;
+}
+
+/* Chữ tiêu đề gradient hồng */
+.text-gradient-pink {
+  background: linear-gradient(120deg, #e15a97 20%, #a82e66 60%, #7c2d4e 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Nền hero */
+.hero-bg {
+  background:
+    radial-gradient(600px 300px at 15% 10%, rgba(244, 175, 204, 0.45), transparent 70%),
+    radial-gradient(700px 350px at 85% 15%, rgba(236, 131, 179, 0.35), transparent 70%),
+    radial-gradient(500px 400px at 50% 100%, rgba(252, 232, 240, 0.9), transparent 70%),
+    linear-gradient(180deg, #fff7fa 0%, #fffbf8 100%);
+}
+
+/* Họa tiết chấm bi mờ */
+.dot-pattern {
+  background-image: radial-gradient(rgba(225, 90, 151, 0.14) 1.5px, transparent 1.5px);
+  background-size: 26px 26px;
+}
+
+/* Animation trôi nhẹ cho các hình trang trí */
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(6deg);
+  }
+}
+.animate-floaty {
+  animation: floaty 6s ease-in-out infinite;
+}
+
+@keyframes floaty-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+.animate-floaty-slow {
+  animation: floaty-slow 9s ease-in-out infinite;
+}
+
+/* Card nổi khi hover */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 34px rgba(225, 90, 151, 0.18);
+}
+
+/* Thanh cuộn đẹp */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fdf4f7;
+}
+::-webkit-scrollbar-thumb {
+  background: #f4afcc;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e15a97;
+}
