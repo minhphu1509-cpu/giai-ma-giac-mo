@@ -26,7 +26,7 @@ export default function RandomDream() {
   const cat = dream ? getCategory(dream.category) : null;
 
   return (
-    <div className="bg-white rounded-[2rem] border border-blush-200 shadow-soft p-8 text-center relative overflow-hidden">
+    <div className="bg-white rounded-[2rem] border border-blush-200 shadow-soft p-6 md:p-8 text-center relative overflow-hidden">
       <div className="absolute inset-0 dot-pattern opacity-60 pointer-events-none" />
       <div className="relative">
         <div className="text-5xl mb-4 animate-floaty-slow">🎲</div>

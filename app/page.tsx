@@ -49,7 +49,7 @@ export default function HomePage() {
           <div className="inline-flex items-center gap-2 bg-white/80 border border-blush-200 rounded-full px-4 py-1.5 text-xs font-medium text-blush-700 mb-6 shadow-card">
             🌸 Kho tàng giải mộng dân gian Việt Nam 🌸
           </div>
-          <h1 className="font-display text-4xl md:text-6xl font-bold leading-tight mb-5">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.15] mb-5">
             <span className="text-gradient-pink">Giải Mã Giấc Mơ</span>
             <br />
             <span className="text-blush-900 text-2xl md:text-4xl font-semibold">
@@ -80,7 +80,7 @@ export default function HomePage() {
               <Link
                 key={s.q}
                 href={`/tra-cuu?q=${encodeURIComponent(s.q)}`}
-                className="px-3.5 py-1.5 rounded-full text-xs font-medium bg-white border border-blush-200 text-blush-700 hover:border-blush-400 hover:bg-blush-50 transition shadow-card"
+                className="inline-flex items-center px-3.5 py-1.5 rounded-full text-xs font-medium bg-white border border-blush-200 text-blush-700 hover:border-blush-400 hover:bg-blush-50 transition shadow-card"
               >
                 {s.label}
               </Link>
@@ -123,14 +123,14 @@ export default function HomePage() {
             những điềm báo rất riêng.
           </p>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
           {CATEGORIES.map((cat) => {
             const count = DREAMS.filter((d) => d.category === cat.id).length;
             return (
               <Link
                 key={cat.id}
                 href={`/tra-cuu?cat=${cat.id}`}
-                className="card-hover bg-white rounded-3xl border border-blush-100 shadow-card p-6 text-center"
+                className="card-hover bg-white rounded-3xl border border-blush-100 shadow-card p-4 md:p-6 text-center"
               >
                 <div className="text-4xl mb-3">{cat.icon}</div>
                 <div className="font-semibold text-blush-800 mb-1">

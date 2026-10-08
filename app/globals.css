@@ -11,12 +11,30 @@
 
 html {
   scroll-behavior: smooth;
+  /* Ngăn trình duyệt mobile tự phóng to chữ khi xoay màn hình */
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   background-color: #fffbf8;
   color: #4a2c3a;
   font-family: var(--font-be-vn), system-ui, sans-serif;
+  /* Chặn cuộn ngang do các họa tiết trang trí absolute */
+  overflow-x: clip;
+  /* Bỏ highlight xanh khi chạm trên mobile */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Vùng chạm tối thiểu thân thiện với ngón tay trên mobile */
+@media (pointer: coarse) {
+  button,
+  a {
+    min-height: 40px;
+  }
+  nav a,
+  nav button {
+    min-height: 44px;
+  }
 }
 
 /* Chữ tiêu đề gradient hồng */

@@ -73,7 +73,7 @@ export default function DreamDetailPage({
       </nav>
 
       {/* Tiêu đề */}
-      <div className="bg-white rounded-[2rem] border border-blush-200 shadow-soft p-8 md:p-10 mb-5 relative overflow-hidden">
+      <div className="bg-white rounded-[2rem] border border-blush-200 shadow-soft p-6 md:p-10 mb-5 relative overflow-hidden">
         <div className="absolute inset-0 dot-pattern opacity-50 pointer-events-none" />
         <div
           className="absolute -top-4 right-2 md:right-4 text-[72px] md:text-[110px] opacity-[0.13] rotate-12 select-none pointer-events-none"
@@ -114,7 +114,7 @@ export default function DreamDetailPage({
       </div>
 
       {/* Ý nghĩa chi tiết */}
-      <div className="bg-white rounded-[2rem] border border-blush-100 shadow-card p-8 mb-6">
+      <div className="bg-white rounded-[2rem] border border-blush-100 shadow-card p-6 md:p-8 mb-6">
         <h2 className="font-display text-xl font-bold text-blush-800 mb-4 flex items-center gap-2">
           📜 Ý nghĩa chi tiết
         </h2>
@@ -129,7 +129,7 @@ export default function DreamDetailPage({
       </div>
 
       {/* Lời khuyên */}
-      <div className="rounded-[2rem] p-8 mb-6 bg-gradient-to-br from-blush-100 to-blush-200/60 border border-blush-200">
+      <div className="rounded-[2rem] p-6 md:p-8 mb-6 bg-gradient-to-br from-blush-100 to-blush-200/60 border border-blush-200">
         <h2 className="font-display text-xl font-bold text-blush-800 mb-3 flex items-center gap-2">
           💗 Lời khuyên dành cho bạn
         </h2>
@@ -138,7 +138,7 @@ export default function DreamDetailPage({
 
       {/* Số may mắn */}
       {dream.numbers.length > 0 && (
-        <div className="bg-white rounded-[2rem] border border-blush-100 shadow-card p-8 mb-6 text-center">
+        <div className="bg-white rounded-[2rem] border border-blush-100 shadow-card p-6 md:p-8 mb-6 text-center">
           <h2 className="font-display text-xl font-bold text-blush-800 mb-2">
             🔢 Con số may mắn theo sổ mơ
           </h2>

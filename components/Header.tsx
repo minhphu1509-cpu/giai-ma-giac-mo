@@ -16,13 +16,13 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white/85 backdrop-blur-md border-b border-blush-100">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2.5">
-            <span className="text-3xl">🌙</span>
-            <span className="leading-tight">
-              <span className="block font-display font-bold text-lg text-gradient-pink">
+          <Link href="/" className="flex items-center gap-2.5 min-w-0">
+            <span className="text-3xl shrink-0">🌙</span>
+            <span className="leading-tight min-w-0">
+              <span className="block font-display font-bold text-base sm:text-lg text-gradient-pink truncate">
                 Giải Mã Giấc Mơ
               </span>
-              <span className="block text-[11px] text-blush-500 tracking-wide">
+              <span className="block text-[11px] text-blush-500 tracking-wide truncate">
                 Điềm báo dân gian Việt Nam
               </span>
             </span>
@@ -68,6 +68,13 @@ export default function Header() {
               {n.label}
             </Link>
           ))}
+          <Link
+            href="/tra-cuu"
+            onClick={() => setOpen(false)}
+            className="mt-1 px-4 py-3 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-blush-400 to-blush-600 text-center"
+          >
+            ✨ Giải mộng ngay
+          </Link>
         </nav>
       )}
     </header>

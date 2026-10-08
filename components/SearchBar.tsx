@@ -30,14 +30,14 @@ export default function SearchBar({
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder={placeholder}
-          className={`flex-1 bg-transparent outline-none placeholder:text-blush-900/35 text-blush-900 ${
-            big ? "text-lg py-2" : "text-sm py-1.5"
+          className={`flex-1 min-w-0 bg-transparent outline-none placeholder:text-blush-900/35 text-blush-900 ${
+            big ? "text-base md:text-lg py-2" : "text-sm py-1.5"
           }`}
         />
         <button
           type="submit"
-          className={`rounded-full font-semibold text-white bg-gradient-to-r from-blush-400 to-blush-600 hover:opacity-90 transition whitespace-nowrap ${
-            big ? "px-8 py-3.5 text-base" : "px-5 py-2 text-sm"
+          className={`shrink-0 rounded-full font-semibold text-white bg-gradient-to-r from-blush-400 to-blush-600 hover:opacity-90 transition whitespace-nowrap ${
+            big ? "px-5 py-3 text-sm md:px-8 md:py-3.5 md:text-base" : "px-5 py-2 text-sm"
           }`}
         >
           Giải mộng
